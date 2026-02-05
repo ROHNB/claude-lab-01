@@ -1,0 +1,35 @@
+{
+  "project": "claude-lab-01",
+  "description": "Interactive CLI application for chatting with Anthropic's Claude API",
+  "type": "python-script",
+  "version": "1.0.0",
+  "python_version": "3.8+",
+  "environment": {
+    "name": "claude-lab-01-env",
+    "type": "venv"
+  },
+  "main_file": "test.py",
+  "dependencies": [
+    "anthropic>=0.77.1",
+    "python-dotenv>=1.0.0"
+  ],
+  "key_features": [
+    "Interactive chat with Claude",
+    "Environment variable configuration",
+    "Clean API integration",
+    "Multi-turn conversation support"
+  ],
+  "files": {
+    "test.py": "Main interactive chat application",
+    "requirements.txt": "Python package dependencies",
+    ".env.example": "Environment variable template",
+    ".gitignore": "Git ignore rules",
+    "README.md": "Project documentation",
+    ".claude-context.json": "Claude context metadata"
+  },
+  "api_model": "claude-3-5-sonnet-20241022",
+  "configuration": {
+    "max_tokens": 1024,
+    "environment_variables": ["ANTHROPIC_API_KEY"]
+  }
+}
